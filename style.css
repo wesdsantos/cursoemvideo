@@ -71,7 +71,7 @@ section.image {
     color: white;
 }
 
-section.image> p {
+section.image> 'p {
     display: inline-block;
     padding: 5px;
     background-color: rgb(0, 0, 0, 0.253);
