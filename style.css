@@ -15,8 +15,7 @@
     font-family: 1em;
 }
 
-html,
-body {
+html, body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
@@ -28,7 +27,7 @@ header {
     text-align: center;
 }
 
-header>h1 {
+header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
@@ -39,15 +38,13 @@ header>p {
     padding-bottom: 50px;
 }
 
-header a,
-footer a {
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover,
-footer a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
@@ -57,7 +54,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 
 section > p {
@@ -67,27 +64,34 @@ section > p {
 section.normal {
     background-color: white;
     color: black;
-
 }
 
 section.image {
     background-color: rgb(54, 51, 51);
     color: white;
+    background-attachment: fixed;
 }
 
-section.image> p {
+section.image > p {
     display: inline-block;
     padding: 5px;
+    background-size: cover;
     background-color: rgb(0, 0, 0, 0.253);
 }
 
 section#img01 {
-    background-image: url('../cursoemvideo/folhas.jpg');
+    background-image: url('./imagem/folhas.jpg');
     background-position: right center;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img02 {
-    background-image: url('../cursoemvideo/passaro.jpg');
+    background-image: url('./imagem/paper.jpg');
+    text-shadow: 1px 1px 0px black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 Footer {
